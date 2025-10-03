@@ -1,0 +1,57 @@
+name: ainewsx
+description: "AINewsX: A mobile-first news application with fake news detection, search, and saved articles."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.4  # For making API requests to NewsAPI and fake news service
+  provider: ^6.1.2  # For state management (theme, news data)
+  sqflite_common_ffi: ^2.3.3
+  sqflite: ^2.3.4  # For local SQLite database (saved articles)
+  path: ^1.9.0  # For handling file paths with sqflite
+  shared_preferences: ^2.3.2  # For storing user preferences (theme, search history)
+  flutter_secure_storage: ^9.2.2  # For secure storage of login credentials
+  timeago: ^3.7.0  # For human-readable time formatting (e.g., "2 hours ago")
+  speech_to_text: ^7.0.0  # For voice input in fake news detection
+  url_launcher: ^6.3.0  # For opening external URLs (e.g., full article links)
+  share_plus: ^10.0.2  # For sharing articles via social media or other apps
+  intl: ^0.19.0  # For date and time formatting utilities
+  email_validator: ^3.0.0  # For validating email inputs in login screen
+  lottie: ^3.1.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  equatable: ^2.0.5
+  flutter_lints: ^4.0.0 # For enforcing code quality and linting
+  http: ^1.2.0
+  speech_to_text: ^7.0.0
+  url_launcher: ^6.3.1
+#  flutter_lints: ^3.0.0  # If you have this already, keep it
+  flutter_launcher_icons: ^0.13.1  # Add this line
+
+flutter:
+  assets:
+    - lib/assets/icon.png
+#    - lib/assets/top_banner.jpg
+    - lib/assets/news_banner_0.jpg
+    - lib/assets/news_banner_1.jpg
+    - lib/assets/news_banner_2.jpg
+    - lib/assets/news_banner_3.jpg
+
+#    - assets/  # Include entire assets directory for additional images
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true  # Enables Android icons
+  ios: true      # Enables iOS (if you build for iOS later)
+  image_path: "assets/icon.png"  # Path to your PNG (adjust if needed)
+  # Optional for adaptive icons (Android 8+):
+  adaptive_icon_background: "#FFFFFF"  # White background example
+  adaptive_icon_foreground: "assets/icon.png"  # Your icon as foreground
