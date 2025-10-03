@@ -1,4 +1,4 @@
-# 📰 AINewsX – AI-Powered News & Fake News Detection App
+# 📰 AINewsX – AI-Powered News & Fake News Detection
 
 <p align="center">
   <img src="Doc/logo.png" alt="Logo" width="150">
