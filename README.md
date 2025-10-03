@@ -100,25 +100,26 @@ Tap on any news card to view the **full article detail**.
 
 ## 🤖 Fake News Detection  
 
-AINewsX’s core strength is its **hybrid fake news detection pipeline**. Users can input suspicious content and get a **verdict** with evidence.  
+AINewsX’s core strength is its **hybrid fake news detection pipeline**.  
+Users can input suspicious content and instantly get a **verdict (Fake / Real)** along with supporting evidence.  
 
-- **Fake Example:**  
+<br> <!-- Adds extra space before images -->
 
-<p align="center">
-  <img src="Doc/Fake_News.jpg" alt="Fake News Example" width="300">
-</p>  
+<table align="center">
+<tr>
+<td align="center">
+  <img src="Doc/Fake_News.jpg" alt="Fake News Example" width="300"><br>
+  <b>Fake News Example</b>
+</td>
 
-- **Real Example:**  
+<td width="50"> </td> <!-- Spacer column -->
 
-<p align="center">
-  <img src="Doc/Real_News.jpg" alt="Real News Example" width="300">
-</p>  
-
-- **Backend Workflow (Python):**  
-
-<p align="center">
-  <img src="Doc/Backend_arch.jpg" alt="Backend Architecture" width="500">
-</p>  
+<td align="center">
+  <img src="Doc/Real_News.jpg" alt="Real News Example" width="300"><br>
+  <b>Real News Example</b>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -144,6 +145,6 @@ AINewsX’s core strength is its **hybrid fake news detection pipeline**. Users 
 
 ### 1️⃣ Clone the repo  
 ```bash
-git clone https://github.com/your-username/AINewsX.git
+git clone https://github.com/kunjdesai12/AINewsX.git
 cd AINewsX
 
