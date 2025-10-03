@@ -143,7 +143,7 @@ Users can input suspicious content and instantly get a **verdict (Fake / Real)**
 
 ## 🚀 Installation & Setup  
 
-### 1️⃣ Clone the repo  
+### Clone the Repository
 ```bash
 git clone https://github.com/kunjdesai12/AINewsX.git
 cd AINewsX
