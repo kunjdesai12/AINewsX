@@ -53,6 +53,97 @@ The following diagram illustrates the complete workflow of **AINewsX**, showing 
 4. **Final Verdict**  
    - The system outputs whether the news is *Real*, *Fake*, or *Unclear*, along with supporting sources and evidence.
 
-
-
 By fusing AI-driven predictions with real-world verification, **AINewsX delivers a transparent, trustworthy, and next-generation news experience**—overcoming the limitations of static AI models.  
+
+---
+
+## ✨ Features  
+
+- 📰 **Latest & Category-Wise News** – stay updated with breaking headlines  
+- 🔍 **Smart Search** – find relevant articles instantly  
+- 📑 **Save for Later** – SQLite-powered offline storage  
+- 🤖 **Fake News Detection** – hybrid BERT + fact-checking  
+- 🎨 **Light & Dark Mode** – clean, modern interface  
+
+<p align="center">
+  <img src="Doc/Home_page.jpg" alt="Home Screen" width="250">
+  <img src="Doc/Category_screen.jpg" alt="Category Screen" width="250">
+  <img src="Doc/Latest_news.jpg" alt="Latest News" width="250">
+</p>  
+
+---
+
+## 📱 App Screens  
+
+### 🔍 Search & Results  
+The app provides an intuitive **search bar** to explore news based on custom queries.  
+
+<p align="center">
+  <img src="Doc/Search_Result.jpg" alt="Search Result" width="300">
+</p>  
+
+### 📑 Saved Articles  
+Articles can be saved for later reading, stored locally using **SQLite** for offline access.  
+
+<p align="center">
+  <img src="Doc/Saved_screen.jpg" alt="Saved Articles" width="300">
+</p>  
+
+### 📰 Article Detail View  
+Tap on any news card to view the **full article detail**.  
+
+<p align="center">
+  <img src="Doc/Article_Detail.jpg" alt="Article Detail" width="300">
+</p>  
+
+---
+
+## 🤖 Fake News Detection  
+
+AINewsX’s core strength is its **hybrid fake news detection pipeline**. Users can input suspicious content and get a **verdict** with evidence.  
+
+- **Fake Example:**  
+
+<p align="center">
+  <img src="Doc/Fake_News.jpg" alt="Fake News Example" width="300">
+</p>  
+
+- **Real Example:**  
+
+<p align="center">
+  <img src="Doc/Real_News.jpg" alt="Real News Example" width="300">
+</p>  
+
+- **Backend Workflow (Python):**  
+
+<p align="center">
+  <img src="Doc/Backend_arch.jpg" alt="Backend Architecture" width="500">
+</p>  
+
+---
+
+## 🛠️ Tech Stack  
+
+**Frontend (Flutter App):**  
+- Flutter (Dart)  
+- Provider (state management)  
+- SharedPreferences & SQLite (storage)  
+
+**Backend (Python):**  
+- Flask API (or FastAPI)  
+- Hugging Face Transformers (BERT-based model)  
+- Sentence-Transformers (semantic similarity)  
+
+**Data & APIs:**  
+- [NewsAPI.org](https://newsapi.org) – real-time news data  
+- Kaggle Fake News Dataset – ~45K labeled articles  
+
+---
+
+## 🚀 Installation & Setup  
+
+### 1️⃣ Clone the repo  
+```bash
+git clone https://github.com/your-username/AINewsX.git
+cd AINewsX
+
